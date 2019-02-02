@@ -1,0 +1,33 @@
+{
+  "name": "swenglish",
+  "version": "0.1.0",
+  "description": "A Swedish/English Dictionary wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandaScott/swenglish.git"
+  },
+  "keywords": [
+    "swedish",
+    "english",
+    "dictionary",
+    "wrapper",
+    "api"
+  ],
+  "author": "Nanda Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NandaScott/swenglish/issues"
+  },
+  "homepage": "https://github.com/NandaScott/swenglish#readme",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

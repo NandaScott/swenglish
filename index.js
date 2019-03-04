@@ -1,8 +1,21 @@
 'use strict';
 
-function testFunc() {
-    console.log('Success!');
-    return true;
+const axios = require('axios');
+
+function fetchHTML(word) {
+    return axios.get(`http://folkets-lexikon.csc.kth.se/folkets/folkets.en.html#${word}`)
+        .then((resp) => {
+            return resp.data;
+        })
+        .catch((error) => {
+            return error.response.data;
+        });
 }
 
-module.exports = { testFunc };
+async function getWord(word) {
+    let html = await fetchHTML(word);
+
+    
+}
+
+module.exports = { getWord };
